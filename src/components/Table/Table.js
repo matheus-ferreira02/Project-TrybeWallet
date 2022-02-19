@@ -48,7 +48,7 @@ class Table extends Component {
   }
 
   render() {
-    const { expenses, edition } = this.props;
+    const { expenses } = this.props;
     return (
       <table className="table_expenses">
         <thead>
@@ -92,7 +92,6 @@ class Table extends Component {
                   </button>
 
                   <button
-                    disabled={ edition }
                     className="btn_expense remove"
                     type="button"
                     name={ expense.id }
@@ -117,10 +116,9 @@ Table.propTypes = {
 }.isRequired;
 
 const mapStateToProps = (state) => {
-  const { expenses, edition } = state.wallet;
+  const { expenses } = state.wallet;
   return {
     expenses,
-    edition,
   };
 };
 
