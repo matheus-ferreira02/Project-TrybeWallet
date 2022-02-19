@@ -1,0 +1,20 @@
+.header {
+  align-items: center;
+  background-color: #58af9c;
+  color: #fafafa;
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.header_money {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.header img {
+  width: 50px;
+}

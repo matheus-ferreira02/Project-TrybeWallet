@@ -1,0 +1,104 @@
+.form {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 15vh;
+  justify-content: space-around;
+  transition: 0.5s all ease-in;
+}
+
+.form input {
+  padding: 10px;
+}
+
+.input_select , .form input {
+  border: none;
+  border-radius: 5px;
+  height: 4vh;
+  width: 200px;
+}
+
+.form input:focus {
+  border: none;
+  outline: 1px solid black;
+}
+
+.labelText {
+  padding: 5px 0;
+}
+
+.form_add {
+  animation: addForm 0.3s forwards ease-in-out;
+  background-color: #3065ac;
+}
+
+@keyframes addForm {
+
+  from {
+    background-color: #04806b;
+  }
+
+  to {
+    background-color: #3065ac;
+  }
+}
+
+.form_edit {
+  animation: editForm 0.4s forwards ease-in-out;
+}
+
+@keyframes editForm {
+
+  from {
+    background-color: #3065ac;
+  }
+
+  to {
+    background-color: #04806b;
+  }
+}
+
+.input_select {
+  background: white;
+  color: rgb(119, 117, 117);
+  padding: 5px;
+}
+
+.input_select::-ms-expand {
+  display: none;
+}
+
+.option_select {
+  background-color: white;
+}
+
+.option_select:focus {
+  border: none;
+  outline: 1px solid black;
+}
+
+.button_form {
+  background-color: #58af9c;
+  border: 1px solid #58af9c;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.2s all ease-in;
+  width: 200px;
+}
+
+.button_form:hover {
+  box-shadow: 0 5px 10px -5px #6dd8c1;
+}
+
+.button_form:disabled {
+  opacity: 0.5;
+}
+
+.button_form:hover:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+}
